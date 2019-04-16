@@ -6,8 +6,9 @@ to build my portfolio website
 
 ## Features
 ### Website
-- [ ] Basic website template
-- [ ] Add dynamic elements (using JavaScript)
+- [ ] Basic Website Template
+- [ ] Dynamic effects (using JavaScript)
+- [ ] Responsive Web Design
 - [ ] Link Portfolio
 
 ### temp (under construction)

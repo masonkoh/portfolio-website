@@ -8,30 +8,37 @@
 
 <body>
         <style>
-                h1 {
-                        text-align: left;
-
-                        margin-top: 2%;
-                        margin-bottom: 2%;
-                        margin-left: 5%;
-                        margin-right: 5%;
+                body {
+                        margin: 0%;
                 }
 
-                p {
+                #grid_main {
+                        display: grid;
+                        grid-template-columns: 25% 1fr;
+                }
+
+                #nav {
+                        border-right: 1px solid black;
+                }
+
+                #content {
+                        padding-left: 3%;
+                }
+
+                #heading_title {
+                        text-align: left;
                         margin-top: 2%;
                         margin-bottom: 2%;
                         margin-left: 5%;
                         margin-right: 5%;
+                        border-bottom: 1px black solid;
+                        padding: 2%;
+                        margin: 0%;
                 }
 
                 img {}
 
-                li {
-                        margin-top: 1%;
-                        margin-bottom: 1%;
-                        margin-left: 5%;
-                        margin-right: 5%;
-                }
+
 
                 iframe {
                         margin-top: 2%;
@@ -40,50 +47,74 @@
                         margin-right: 5%;
                 }
         </style>
-        <h1>Mason Youngmin Ko</h1>
+        <div>
+                <h1 id="heading_title">Mason Youngmin Ko</h1>
+        </div>
+
+        <div id="grid_main">
+                <div id="nav">
+                        <ul>
+                                <li><a href="1.html">main</a></li>
+                                <li><a href="2.html">portfolio</a></li>
+                                <li><a href="3.html">Tech used in this</a></li>
+                                <li><a href="https://github.com/masonkoh/portfolio-website" target="_blank"
+                                                title="go see how this page works">Git Repo of this</a></li>
+                        </ul>
+                </div>
+                <div id="content">
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et
+                                dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip
+                                <strong>ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse
+                                cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia
+                                deserunt
+                                mollit anim id est laborum.
+                        </p>
+
+                        <p>
+                                <strong>Sed ut perspiciatis unde</strong> omnis iste natus error sit voluptatem
+                                accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae
+                                vitae
+                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut fugit, sed
+                                quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam est, qui
+                                dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                                tempora incidunt
+                                ut
+                                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                                nostrum
+                                exercitationem ullam
+                                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
+                                eum iure
+                                reprehenderit
+                                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                                eum fugiat quo
+                                voluptas
+                                nulla pariatur?
+                        </p>
+
+                </div>
+        </div>
+
+
+        <!-- <iframe width="50%" height="50%" src="https://www.youtube.com/embed/dPRtcRwKo-Y" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+
+
         <img src="source/main_up.jpeg" width="25%">
         <img src="source/left_sidebar.jpeg" width="25%">
-
-        <ul>
-                <li><a href="1.html">1. main</a></li>
-                <li><a href="2.html">2. portfolio</a></li>
-                <li><a href="3.html">3. technology used in this website</a></li>
-                <li><a href="https://github.com/masonkoh/portfolio-website" target="_blank"
-                                title="go see how this page works">Visit Git Repository of this website</a></li>
-        </ul>
-
-        <iframe width="50%" height="50%" src="https://www.youtube.com/embed/dPRtcRwKo-Y" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                <strong>ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt
-                mollit anim id est laborum.
-        </p>
-
-        <p>
-                <strong>Sed ut perspiciatis unde</strong> omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-                ut
-                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam
-                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit
-                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas
-                nulla pariatur?
-        </p>
 
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">

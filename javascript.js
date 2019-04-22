@@ -9,7 +9,6 @@ function changeToLightmode() {
   document.getElementsByTagName("ul")[0].style.color = "black";
   document.getElementById("grid_main_content").style.color = "black";
 }
-
 // var as = document.getElementsByTagName("a");
 // for (var i = 0; i < as.length; i++) {
 //   as[i].style.color = "white";

@@ -45,7 +45,7 @@ iframe {
   margin-left: 5%;
   margin-right: 5%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #grid_main {
     display: block;
   }

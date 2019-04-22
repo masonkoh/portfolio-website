@@ -15,18 +15,31 @@
         $(".modeToggle").click(function() {
           $(".modeToggle").toggleClass("active");
           $("body").toggleClass("night");
+          alert(
+            "Dark mode Toggle is underconstruction.\nPlease use Dark mode Buttons instead."
+          );
         });
       });
       // https://www.youtube.com/watch?v=PPhCJewgI4Y
     </script>
 
     <div class="modeToggle"></div>
-    <!-- <input type="button" value="Light Mode" onclick="changeToLightmode()" />
-    <input type="button" value="Dark Mode" onclick="changeToDarkMode()" /> -->
-
-    <div>
-      <h1 id="heading_title"><a href="index.html">Mason Youngmin Ko</a></h1>
+    <div id="modeButtonDiv">
+      <input
+        type="button"
+        class="modeButtonLight"
+        value="Light Mode"
+        onclick="changeToLightmode()"
+      />
+      <input
+        type="button"
+        class="modeButtonDark"
+        value="Dark Mode"
+        onclick="changeToDarkMode()"
+      />
     </div>
+
+    <h1 id="heading_title"><a href="index.html">Mason Youngmin Ko</a></h1>
 
     <div id="grid_main">
       <div id="grid_main_nav">

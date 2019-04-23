@@ -20,9 +20,3 @@ function changeToDarkMode() {
   document.getElementsByTagName("ul")[0].style.color = "#DCDCDC";
   document.getElementById("grid_main_content").style.color = "#DCDCDC";
 }
-
-// var as = document.getElementsByTagName("a");
-// for (var i = 0; i < as.length; i++) {
-//   as[i].style.color = "white";
-// }
-// document.getElementsByTagName("ol")[0].style.color = "white";

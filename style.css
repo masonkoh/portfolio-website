@@ -42,13 +42,6 @@ a:visited {
   text-align: center;
 }
 
-iframe {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .modeToggle {
   position: absolute;
   top: 0.5%;

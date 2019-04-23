@@ -8,12 +8,12 @@ function toggleMode(modeValue) {
 
 function changeToDayMode() {
   var links = document.getElementsByTagName("a");
-  document.body.style.backgroundColor = "white";
   for (var i = 0; i < links.length; i++) {
     if (links[i].href) {
       links[i].style.color = "black";
     }
   }
+  document.body.style.backgroundColor = "white";
   document.getElementsByTagName("ul")[0].style.color = "black";
   document.getElementById("grid_main_content").style.color = "black";
 }

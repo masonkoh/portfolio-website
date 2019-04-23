@@ -27,15 +27,22 @@
     <div id="modeButtonDiv">
       <input
         type="button"
-        class="modeButtonLight"
-        value="Light Mode"
-        onclick="changeToLightmode()"
-      />
-      <input
-        type="button"
-        class="modeButtonDark"
-        value="Dark Mode"
-        onclick="changeToDarkMode()"
+        id="modeToggleButton"
+        value="Night Mode"
+        onclick="
+      var toggleValue =
+      document.querySelector('#modeToggleButton').value;
+      if(toggleValue === 'Night Mode')
+      {
+        changeToNightMode();
+        document.querySelector('#modeToggleButton').value = 'Day Mode';
+      } 
+      else if(toggleValue === 'Day Mode') 
+      {
+        changeToDayMode();
+        document.querySelector('#modeToggleButton').value = 'Night Mode';
+      }
+      "
       />
     </div>
 

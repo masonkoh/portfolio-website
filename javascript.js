@@ -18,6 +18,7 @@ function changeToDayMode() {
   document.getElementsByTagName("ul")[0].style.color = "black";
   document.getElementById("grid_main_content").style.color = "black";
 }
+
 function changeToNightMode() {
   var aList = document.getElementsByTagName("a");
   var i = 0;

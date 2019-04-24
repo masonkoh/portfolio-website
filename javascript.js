@@ -1,11 +1,16 @@
 function toggleMode() {
-  var toggleValue = document.getElementById("modeToggleButton").value;
+  var toggleValue = document.getElementsByClassName("modeToggleButton")[0]
+    .value;
+  // using array[0] because CLASS is not unique unlike ID. but in this website, we have only 1 class called 'modeToggleButton' tho.
+  var classTempStorage = document.getElementsByClassName("modeToggleButton")[0];
+  classTempStorage.classList.toggle("active");
+
   if (toggleValue === "Dark Mode") {
     changeToDarkMode();
-    document.getElementById("modeToggleButton").value = "Light Mode";
+    document.getElementsByClassName("modeToggleButton")[0].value = "Light Mode";
   } else if (toggleValue === "Light Mode") {
     changeToLightMode();
-    document.getElementById("modeToggleButton").value = "Dark Mode";
+    document.getElementsByClassName("modeToggleButton")[0].value = "Dark Mode";
   }
 }
 

@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  background-color: "#3A3C3E";
 }
 a {
   text-decoration: none;
@@ -38,12 +39,12 @@ a:visited {
   margin: 0%;
   text-align: center;
 }
-#modeToggleButton {
+.modeToggleButton {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 100px;
-  height: 30px;
+  width: 70px;
+  height: 20px;
   z-index: 1;
   border: 1px solid #000;
   border-radius: 4px;
@@ -52,6 +53,10 @@ a:visited {
   right: 1%;
   overflow: hidden;
 }
+.modeToggleButton.active {
+  border-color: #ffffff;
+}
+
 @media screen and (max-width: 800px) {
   #grid_main {
     display: block;

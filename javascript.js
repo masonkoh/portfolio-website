@@ -7,7 +7,7 @@ function toggleMode(modeValue) {
   }
 }
 
-function changeToDayMode() {
+function changeToLightMode() {
   var aList = document.getElementsByTagName("a");
   var i = 0;
   while (i < aList.length) {
@@ -19,7 +19,7 @@ function changeToDayMode() {
   document.getElementById("grid_main_content").style.color = "black";
 }
 
-function changeToNightMode() {
+function changeToDarkMode() {
   var aList = document.getElementsByTagName("a");
   var i = 0;
   while (i < aList.length) {

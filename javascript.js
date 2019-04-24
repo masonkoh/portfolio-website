@@ -1,11 +1,11 @@
 function toggleMode() {
-  var toggleValue = document.querySelector("#modeToggleButton").value;
+  var toggleValue = document.getElementById("modeToggleButton").value;
   if (toggleValue === "Dark Mode") {
     changeToDarkMode();
-    document.querySelector("#modeToggleButton").value = "Light Mode";
+    document.getElementById("modeToggleButton").value = "Light Mode";
   } else if (toggleValue === "Light Mode") {
     changeToLightMode();
-    document.querySelector("#modeToggleButton").value = "Dark Mode";
+    document.getElementById("modeToggleButton").value = "Dark Mode";
   }
 }
 

@@ -26,6 +26,8 @@ function changeToLightMode() {
   document.body.style.backgroundColor = "white";
   document.getElementsByTagName("ul")[0].style.color = "black";
   document.getElementById("grid_main_content").style.color = "black";
+
+  localStorage.setItem("mode", "light");
 }
 
 function changeToDarkMode() {
@@ -39,4 +41,6 @@ function changeToDarkMode() {
   document.body.style.backgroundColor = "#3A3C3E";
   document.getElementsByTagName("ul")[0].style.color = "#DCDCDC";
   document.getElementById("grid_main_content").style.color = "#DCDCDC";
+
+  localStorage.setItem("mode", "dark");
 }

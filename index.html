@@ -17,7 +17,15 @@
       onclick="toggleMode();
       "
     />
-
+    <script>
+      if (localStorage.getItem("mode") == "dark") {
+        console.log("it's dark");
+        changeToDarkMode();
+      } else {
+        console.log("it's not dark");
+        changeToLightMode();
+      }
+    </script>
     <h1 id="heading_title"><a href="index.html">Mason Youngmin Ko</a></h1>
 
     <div id="grid_main">

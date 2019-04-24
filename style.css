@@ -1,6 +1,7 @@
 body {
   margin: 0%;
   background-color: "#3A3C3E";
+  transition: 0.5s;
 }
 a {
   text-decoration: none;
@@ -54,11 +55,14 @@ a:visited {
   top: 0.5%;
   right: 1%;
   overflow: hidden;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 .modeToggleButton.active {
   background: #dcdcdc;
   border-color: #dcdcdc;
   color: #3a3c3e;
+  /* transform: translateY(-30px); */
 }
 
 @media screen and (max-width: 800px) {

@@ -46,15 +46,19 @@ a:visited {
   width: 70px;
   height: 20px;
   z-index: 1;
-  border: 1px solid #000;
+  border: 1px solid #3a3c3e;
   border-radius: 4px;
+  background: #3a3c3e;
+  color: #dcdcdc;
   cursor: pointer;
   top: 0.5%;
   right: 1%;
   overflow: hidden;
 }
 .modeToggleButton.active {
-  border-color: #ffffff;
+  background: #dcdcdc;
+  border-color: #dcdcdc;
+  color: #3a3c3e;
 }
 
 @media screen and (max-width: 800px) {

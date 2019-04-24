@@ -5,12 +5,12 @@ function toggleMode() {
   var classTempStorage = document.getElementsByClassName("modeToggleButton")[0];
   classTempStorage.classList.toggle("active");
 
-  if (toggleValue === "Dark Mode") {
+  if (toggleValue === "Dark") {
     changeToDarkMode();
-    document.getElementsByClassName("modeToggleButton")[0].value = "Light Mode";
-  } else if (toggleValue === "Light Mode") {
+    document.getElementsByClassName("modeToggleButton")[0].value = "Light";
+  } else if (toggleValue === "Light") {
     changeToLightMode();
-    document.getElementsByClassName("modeToggleButton")[0].value = "Dark Mode";
+    document.getElementsByClassName("modeToggleButton")[0].value = "Dark";
   }
 }
 

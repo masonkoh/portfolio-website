@@ -29,19 +29,7 @@
         type="button"
         id="modeToggleButton"
         value="Dark Mode"
-        onclick="
-      var toggleValue =
-      document.querySelector('#modeToggleButton').value;
-      if(toggleValue === 'Dark Mode')
-      {
-        changeToDarkMode();
-        document.querySelector('#modeToggleButton').value = 'Light Mode';
-      } 
-      else if(toggleValue === 'Light Mode') 
-      {
-        changeToLightMode();
-        document.querySelector('#modeToggleButton').value = 'Dark Mode';
-      }
+        onclick="toggleMode();
       "
       />
     </div>

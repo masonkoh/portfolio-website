@@ -1,9 +1,11 @@
-// under construction...
-function toggleMode(modeValue) {
-  if (modeValue === "Night Mode") {
+function toggleMode() {
+  var toggleValue = document.querySelector("#modeToggleButton").value;
+  if (toggleValue === "Dark Mode") {
     changeToDarkMode();
-  } else {
-    changeToLightmode();
+    document.querySelector("#modeToggleButton").value = "Light Mode";
+  } else if (toggleValue === "Light Mode") {
+    changeToLightMode();
+    document.querySelector("#modeToggleButton").value = "Dark Mode";
   }
 }
 

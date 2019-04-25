@@ -17,6 +17,7 @@ function toggleMode() {
 }
 
 function changeToLightMode() {
+  console.log("changeToLightMode() called");
   var aList = document.getElementsByTagName("a");
   var i = 0;
   while (i < aList.length) {
@@ -31,6 +32,7 @@ function changeToLightMode() {
 }
 
 function changeToDarkMode() {
+  console.log("changeToDarkMode() called");
   var aList = document.getElementsByTagName("a");
   var i = 0;
   while (i < aList.length) {

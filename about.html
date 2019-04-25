@@ -4,23 +4,26 @@
     <title>Mason Youngmin Ko</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+    <script src="source/jquery-3.4.0.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <script src="javascript.js"></script>
-    <input type="button" value="Light Mode" onclick="changeToLightmode()" />
-    <input type="button" value="Dark Mode" onclick="changeToDarkMode()" />
+    <input
+      type="button"
+      class="modeToggleButton"
+      value="Dark"
+      onclick="toggleMode();
+      "
+    />
 
-    <div>
-      <h1 id="heading_title"><a href="index.html">Mason Youngmin Ko</a></h1>
-    </div>
+    <h1 id="heading_title"><a href="index.html">Mason Youngmin Ko</a></h1>
 
     <div id="grid_main">
-      <div id="nav">
+      <div id="grid_main_nav">
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="project.html">Project</a></li>
           <li>
             <a
               href="https://github.com/masonkoh/portfolio-website"
@@ -29,63 +32,83 @@
               >Tech used in this</a
             >
           </li>
-          <li><a href="asMusician.html">as musician</a></li>
         </ul>
       </div>
-      <div id="content">
+      <div id="grid_main_content">
+        <p>about.html</p>
         <p>
-          about.html content
+          <strong>ex ea commodo consequat.</strong> Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-    </div>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function() {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/5cb6651ad6e05b735b42f3d8/default";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
+        <!--Start of outside feature: 'Tawk.to', 'disqus' -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+          var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+          (function() {
+            var s1 = document.createElement("script"),
+              s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = "https://embed.tawk.to/5cb6651ad6e05b735b42f3d8/default";
+            s1.charset = "UTF-8";
+            s1.setAttribute("crossorigin", "*");
+            s0.parentNode.insertBefore(s1, s0);
+          })();
+        </script>
+        <!--End of Tawk.to Script-->
 
-    <div id="disqus_thread"></div>
-    <script>
-      /**
-       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-      /*
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          /*
                 var disqus_config = function () {
                 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                 };
                 */
-      (function() {
-        // DON'T EDIT BELOW THIS LINE
-        var d = document,
-          s = d.createElement("script");
-        s.src = "https://portfolio-gbwoby9nqg.disqus.com/embed.js";
-        s.setAttribute("data-timestamp", +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript
-      >Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript"
-        >comments powered by Disqus.</a
-      ></noscript
-    >
+          (function() {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://portfolio-gbwoby9nqg.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
 
-    <script
-      id="dsq-count-scr"
-      src="//portfolio-gbwoby9nqg.disqus.com/count.js"
-      async
-    ></script>
+        <script
+          id="dsq-count-scr"
+          src="//portfolio-gbwoby9nqg.disqus.com/count.js"
+          async
+        ></script>
+        <!--End of outside feature: 'Tawk.to', 'disqus' -->
+      </div>
+    </div>
+    <script>
+      if (localStorage.getItem("mode") == "dark") {
+        console.log("it's dark");
+        changeToDarkMode();
+        document.getElementsByClassName("modeToggleButton")[0].value = "Light";
+        var modeToggleButtonClassName = document.getElementsByClassName(
+          "modeToggleButton"
+        )[0];
+        modeToggleButtonClassName.classList.toggle("active");
+      } else {
+        console.log("it's not dark");
+        changeToLightMode();
+        document.getElementsByClassName("modeToggleButton")[0].value = "Dark";
+      }
+    </script>
   </body>
 </html>

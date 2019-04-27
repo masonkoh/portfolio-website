@@ -40,6 +40,11 @@ a:visited {
   margin: 0%;
   text-align: center;
 }
+
+.grid_main_nav_menu {
+  cursor: pointer;
+}
+
 .modeToggleButton {
   position: absolute;
   margin: 0;

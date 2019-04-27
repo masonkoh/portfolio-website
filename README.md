@@ -8,6 +8,7 @@ https://masonkoh.github.io/portfolio-website/
 ### Website
 - [ ] Basic Website Template
 - [ ] Dynamic effects (using JavaScript)
+- [ ] AJAX
 - [ ] Responsive Web Design
 - [ ] Link Portfolio
 

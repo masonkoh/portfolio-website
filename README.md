@@ -7,10 +7,13 @@ https://masonkoh.github.io/portfolio-website/
 ## Features
 ### Website
 - [ ] Basic Website Template
-- [ ] Dynamic effects (using JavaScript)
-- [ ] AJAX
 - [ ] Responsive Web Design
 - [ ] Link Portfolio
+- [ ] Dynamic effects (using JavaScript)
+- [ ] Single Page Application
+- [ ] AJAX
+- [ ] PJAX
+
 
 ### temp (under construction)
 |Name|Description|Note|

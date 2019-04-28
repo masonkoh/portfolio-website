@@ -13,6 +13,7 @@ https://masonkoh.github.io/portfolio-website/
 - [ ] Single Page Application
 - [ ] AJAX
 - [ ] PJAX
+- [ ] OAuth 2.0 (Facebook, Google, etc...)
 
 
 ### temp (under construction)

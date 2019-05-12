@@ -14,6 +14,7 @@ https://masonkoh.github.io/portfolio-website/
 - [ ] AJAX
 - [ ] PJAX
 - [ ] OAuth 2.0 (Facebook, Google, etc...)
+- [ ] How familiar with Git (https://learngitbranching.js.org)
 
 
 ### temp (under construction)

@@ -1,5 +1,5 @@
 # portfolio-website
-https://github.com/masonkoh/react-portfolio-website.git
+https://masonkoh.github.io/react-portfolio-website/
 
 ![Platform](https://img.shields.io/badge/platform-web-silver.svg)
 ![Language](https://img.shields.io/badge/language-JavaScript-orange.svg)

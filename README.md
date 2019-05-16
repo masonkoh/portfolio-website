@@ -1,5 +1,6 @@
 # portfolio-website
 https://masonkoh.github.io/react-portfolio-website/
+Under construction...
 
 ![Platform](https://img.shields.io/badge/platform-web-silver.svg)
 ![Language](https://img.shields.io/badge/language-JavaScript-orange.svg)

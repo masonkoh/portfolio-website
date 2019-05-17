@@ -1,8 +1,10 @@
 # portfolio-website
 https://masonkoh.github.io/react-portfolio-website/
-* The Website is now under construction. I recently migrated to React. It will be reopened soon!
-* How to deploy react app on Github Pages
-** https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
+
+The Website is now under construction. I recently migrated to React. It will be reopened soon!
+
+How to deploy react app on Github Pages
+-   https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a
 
 ![Platform](https://img.shields.io/badge/platform-web-silver.svg)
 ![Language](https://img.shields.io/badge/language-JavaScript-orange.svg)

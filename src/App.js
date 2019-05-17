@@ -10,7 +10,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>For my mother, Hyunsook J</p>
+        <p>For my mother, Hyunsook C J</p>
+        <p>From your son, Mason Y Ko</p>
         <a
           className="App-link"
           href="https://reactjs.org"

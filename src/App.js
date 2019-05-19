@@ -18,6 +18,7 @@ function App() {
                     <li><a href={"https://github.com/mindspark-sict"} target={"_blank"}>Team Git page</a></li>
                     <li><a href={"https://zenit.senecac.on.ca/~prj666_192a05/"} target={"_blank"}> Team Website</a></li>
                     <li><a href={"https://github.com/masonkoh/PRJ666-website-backup"} target={"_blank"}>Team Project
+                        Documentation
                         Backup Git Repo</a>
                     </li>
                 </ul>
